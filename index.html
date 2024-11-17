@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>No Rastro de um Crime</title>
+</head>
+
+<body>
+    <main>
+        
+        <div class ="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Imagem de início do jogo">
+            <p>Você é um(a) detetive no encalço de um assasino frio que, em plena luz do dia, atirou em uma socialite que
+                corria no Parque Ibirapuera em uma manhã de domingo, conseguindo fugir sem deixar testemunhas. Num primeiro momento, você procura pistas em locais frequentados pela vítima.</p>
+            <button class="btn-próximo" data-próximo="1"> Salão de Beleza no Iguatemi </button>
+            <button class="btn-próximo" data-próximo="2"> Academia no Itaim Bibi.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1-Salão beleza.jpg" alt="imagem indo até o salão de beleza">
+            <p> As 08:00, você procura por Suzana, cabelereira pessoal da vítima, no entanto, nesse dia
+                ela teve um compromisso fora e só chegará depois das 16:00.</p>
+            <button class="btn-próximo" data-próximo="3">Esperar por Suzana.</button>
+            <button class="btn-próximo" data-próximo="4">Ir embora, e procurar pistas em outro local.</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2-academia.png" alt="imagem da academia">
+            <p>Na Academia, com o auxílio do gerente, você acessa o armário pesoal da vítima. Nele encontra uma carta ameaçadora feita com colagens e assinada com a letra P. No armário também havia post-its sobre não esuqcer de pegar um vestido para a festa de gala que ocorreu há 3 dias.</p>
+            <button class="btn-próximo" data-próximo="5"> Vá até uma cafeteria na Fradique Coutinho.</button>
+            <button class="btn-próximo" data-próximo="6">Vá para a loja de roupas na Oscar Freire.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-passo1-Salão beleza.jpg" alt="imagem indo até o salão de beleza">
+            <p>Ao esperar pela funcionária você ouve conversas de clientes e descobre que a vítima estava chorando no banheiro depois de uma discussão acalourada pelo telefone; Suzana chega e lhe diz que a vítima não falava muito, mas estava apreensiva em comparecer em uma festa de gala que aconteceu apenas 3 dias antes do assassinato.</p>
+            <button class="btn-próximo" data-próximo="6">Vá para a loja de roupas na Oscar Freire.</button>
+            <button class="btn-próximo" data-próximo="7">Vá para o salão de Festas na Vila Olímpia.</button>
+        </div>    
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-beco-escuro.PNG" alt="você perdeu!">
+                <p>Você procurou por pistas o dia todo, mas não conseguiu nada. Ao voltar para casa tarde da noite, passa por uma esquina escura onde, mãos te agarram e arrastam par um beco. No dia seguinte a notícia nos jornais é "Mulher é encontrada morta em beco escuro”!</p>
+                <button class="btn-próximo" data-próximo="0"> Você perdeu! Retorne ao início do jogo.</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5-atropelamento.jpg" alt="foi atropeladae perdeu.">
+            <p>Você toma um café muito gostoso e relaxa, como anda muito cansada volta para casa cedo, ainda pensando na carta ameaçadora e em ir até o salão de baile. No entanto ao atravessar uma rua já próxima de casa no capão redondo, um carro em alta velocidade acelera em sua direção. Você não tem tempo nem de desviar. As manchetes no dia seguinte: "Mulher é atropelada e morta por motorista que foge sem prestar socorro".</p>
+            <button class="btn-próximo" data-próximo="0"> Você realxou e se tornou alvo do assassino. Volte ao início.</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-passo6-Loja Roupa.jpg" alt="loja de roupas">
+            <p>A loja na Oscar Freire lhe fornece a nota fiscal do vestido que foi adquirido, uma funcionária relata que a vítima parecia distraida, solicitou que ajustes fossem feitos e a peça deveria ser enviada para um endereço no Ipiranga.</p>
+            <button class="btn-próximo" data-próximo="7"> Vá para o Salão de Festas.</button>
+            <button class="btn-próximo" data-próximo="8"> Vá para o endereço no Ipiranga.</button>
+        </div> 
+        <div class="passo" id="passo-7">
+            <img src="img/cenário-passo7-salão festa.jpg" alt="salão de festa de gala">
+            <p> No Salão de baile você conversa com vários funcionários, uma funcionária que fica no banheiro feminino fazendo a manutenção durante o evento relatou que, ao entrar trazendo novos produtos ouviu a vítima muito nervosa ao telefone, e escutou uma frase: "Deixe-me em paz. Acabou!"</p>
+            <button class="btn-próximo" data-próximo="9"> Juntando a carta amaeaça e os relatos da funcionária você decide procurar Pedro. Namorado da vítima.</button>
+            <button class="btn-próximo" data-próximo="10"> Juntando a carta ameaça e os relatos da funcionária você decide procurar Paulo o ex-namorado da vítima.</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="img/cenário-passo8-apartamento.jpg" alt="apartamento onde ocorre conversas.">
+            <p> Chegando no Ipiranga, você estranha o endereço pois era um prédio de apartamentos residenciais confortável, mas não o padrão de vida da vítima.Ao tocar a camapainha quem atende é:</p>
+            <button class="btn-próximo" data-próximo="9"> Pedro, o namorado da vítima.</button>
+            <button class="btn-próximo" data-próximo="11"> Douglas, o personal treiner da vítima.</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="img/cenário-passo8-apartamento.jpg" alt="apartamento onde ocorre conversas.">
+            <p> Em sua conversa com Pedro, ele relata que a namorada parecia nervosa, porém não lhe contava o que estava acntecendo, ele também disse que fora isso o relacionamento estava bem, e eles não tinham problemas. Ainda conversando Pedro afirma que a vítima não tinha desafetos a não ser seu ex-namorado Paulo.</p>
+            <button class="btn-próximo" data-próximo="10"> Com todas as pistas decide ir atrás de Paulo.</button>
+            <button class="btn-próximo" data-próximo="12"> Com todas as pistas, você vai té o apartamento da vítima, e depois falar com Paulo.</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-passo10-Conversas.jpg" alt="conversas">
+            <p> Alguns dias depois você consegue falar com Paulo, que estava viajando. Confrontado com a afirmação de sua desavença com a vítima ele parece surpreso, e afirma que isso nunca havia acontecido, eles se separaram em bons termos e continuavam amigos. Então você relata que a vítima parecia brigar com algém no telefone e Paulo te conta que dois dias antes da viajem a vítima entrou em contato com ele para desabafar e dizer que seu namoro estava no fim, Pedro havia se tornado violento e estava vigiando seus passos dia e noite, ele conta que ela não estava ficando em casa por medo e alguém da academia a estava ajudando.</p>
+            <button class="btn-próximo" data-próximo="11"> Você procura Douglas, o personal treiner da vítima.</button>
+            <button class="btn-próximo" data-próximo="12"> Com todas as pistas você vai até o aprtamento da vítima.</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/cenário-passo8-apartamento.jpg" alt="apartamento onde ocorre conversas.">
+            <p> Douglas afirma que depois de presenciar uma agressão de Pedro a vítima ele ofereceu ajuda, pois era voluntário em uma casa de proteção a mulheres vítimas de violência e já havia passado por situações de violência na infância, a vítima primeiro negou mas cerca de uma semana antes do assassinato entrou em contato pedindo ajuda, Pedro saiu do controle e afirmava que ela tinha amantes e que iria matá-la se o abandonasse, apesar de tentar convencê-la a prestar queixa ela recusou, afirmando que não queria escândalo e depois da festa de gala sairia do país por alguns meses. Ela estava ficando em sua casa.</p>
+            <button class="btn-próximo" data-próximo="12"> Com todas as pistas você vai até o aprtamento da vítima.</button>
+            <button class="btn-próximo" data-próximo="13"> Com todas as testemunhas você volta a procurar Pedro, que ele está saindo do pais a trabalho..</button>
+        </div> 
+        <div class="passo" id="passo-12">
+            <img src="img/cebario-passo12-apartamento-vitima.jpg" alt="procura provas casa vítima">
+            <p> No apartamento da vítima você faz uma busca minunciosa, prestes a desistir vai ao banheiro, olhando a caixa de descarga do vaso sanitário decide "por que não!, dentro você encontra um saco vedado, dentro dele há gravações de ameaças de Pedro, fotos de ferimentos da vítima um verdadeiro dossiê.</p>
+            <button class="btn-próximo" data-próximo="13"> Com todas as provas e testemunhas você vai atrás de Pedro, que está saindo do pais a trabalho.</button>
+            <button class="btn-próximo" data-próximo="14"> Com todas as Provas e testemuhas você aciona  apoio policial e vai atrás de Pedro.</button>
+        </div>
+        <div class="passo" id="passo-13">
+            <img src="img/cenário-passo13-aeroporto.PNG" alt="aeroporto onde tudo pode acontecer.">
+            <p> Você alcança Pedro antes que ele possa entrar em seu jato particular, mas ele não está disposto a se entregar, vocês trocam tiros e você e baleada. Pedro foge. "Manchete: Policial e baleada e morta, assassino de Socialite foragido!"</p>
+            <button class="btn-próximo" data-próximo="0"> Você Perdeu! Volte ao início.</button>
+        </div> 
+        <div class="passo" id="passo-14">
+            <img src="img/cenario-passo14-policia.jpg" alt="perseguição policial">
+            <p> A polícia cerca o aeroporto particular onde o jato de Pedro está para decolar, ele não está disposto a se entregar, policia e assassino trocam tiros e...."</p>
+            <button class="btn-próximo" data-próximo="15"> descubra</button>
+        </div>
+        <div class="passo" id="passo-15">
+            <img src="img/cenario-passo15-manchete.PNG" alt="resultado final nos jornais">
+            <p>"Manchete: Assassino de socialite troca tiros com a polícia e morre!"</p>
+            <button class="btn-próximo" data-próximo="0"> Você Venceu! Volte ao início.</button>
+        </div>    
+
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
